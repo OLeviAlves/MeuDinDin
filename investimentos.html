@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/simulador.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="#"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Fórum Principal</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+              <div class="container-fluid">
+                <a href="home.html">
+                  <img
+                    src="imgs/MEU-DINDIN-LETTERING-PRETO.png"
+                    height="80"
+                    alt="Logo Meu DinDin"
+                  />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="home.html"><h5>Meu DinDin</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="simulador.html">Simulador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="forum.html">Fórum</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="noticias.html">Notícias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html"><h5>Bruno</h5></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+    </div>
+    
+    <!--Conteúdo do site-->
+    <div id="conteudo">
+        <main>
+           <div class="container">
+               <div class = "logo2">        
+                   <img class = "logo2" src = "imgs/investimentos-4.webp" alt="Image" height="320" width = "1300">
+               </div>
+            <body>
+                <p></p>
+
+                <!-- Sistema de Pesquisa de Notícias -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar informações sobre investimentos" onkeyup="searchNews()">
+                </div>
+
+                <p></p>
+
+                <!-- Lista de Notícias -->
+                
+                <div class="news-list" id="newsList">
+                <!-- Exemplo de notícias financeiras -->
+                
+                <!--
+                <div class="news-item">
+                    <h5>O que são Ações e como investir?</h5>
+                    <p>Entenda como investir em ações e o que esperar desse tipo de investimento...</p>
+                </div>
+                <div class="news-item">
+                    <h5>Riscos e oportunidades no Tesouro Direto</h5>
+                    <p>Saiba tudo sobre os investimentos no Tesouro Direto, incluindo os diferentes tipos de títulos...</p>
+                </div>
+                <div class="news-item">
+                    <h5>Tipos de investimentos</h5>
+                    <p>Veja as opções de investimentos em renda fixa e como escolher a melhor para o seu perfil...</p>
+                </div>
+                -->
+
+                <!--Conteúdo para conhecimento-->
+
+            
+                <div class="news-item">
+                    <h5>O que são Ações e como investir?</h5>
+                    <p><b>Quais são os principais e como escolher o melhor para você?<br /></b>
+                        <br />
+                        Não é fácil tomar a decisão de investir e em qual ativo investir, por este motivo o meu dindin está aqui para
+                        sanar todas as dúvidas, de forma independente de qualquer corretora ou banco, pra trazer as melhores
+                        informações. Desta forma, apresentaresmos resposta, de forma clara e objetiva, para as seguintes questões:<br />
+                        <br />
+                        - O que é um investimento?<br />
+                        - Quais são os tipos de investimentos financeiros?<br />
+                        - Os tipos de investimentos de renda fixa<br />
+                        - Os tipos de investimentos de renda variável<br />
+                        - Quais são os tipos de investimentos mais seguros?<br />
+                        - Como escolher um tipo de investimento?<br /></p>
+                </div>
+
+                <div class="news-item">
+                    <h5>Renda Fixa</h5>
+                    <p>Renda Fixa é um investimento com regras de remuneração definidas no momento da aplicação. É recomendada para
+                        quem busca um risco menor de perdas e funciona como um "empréstimo" ao contrário.
+                        Vamos explicar: o investidor entrega seu dinheiro para o emissor do título de renda fixa e, em troca, recebe uma
+                        rentabilidade determinada. O investimento renda fixa é ideal para quem tem um perfil mais conservador.
+                        Quando o investidor compra um título de renda fixa, está emprestando dinheiro ao emissor do papel, que pode ser
+                        uma empresa, um banco ou o governo. Em troca, receberá seu dinheiro corrigido por uma taxa de juros no prazo
+                        determinado.
+                        Por exemplo: no CDB, que é um título de dívida bancário, é como se o investidor estivesse emprestando dinheiro
+                        para o banco.</p>
+                        <h5>Tipos de investimentos em renda fixa:</h5>
+                        <p></p>
+                </div>
+
+                <div class="news-item">
+                    <h5>Certificado de Depósito Bancário (CDB):</h5>
+                    <p><dd>O CDB (Certificado de Depósito Bancário) é um título de dívida, quem compra esse produto vira credor de
+                        bancos – que são as únicas instituições que emitem esse tipo de título. O rendimento do CDB pode ser
+                        conhecido no momento da aplicação ou seguir algum indicador da economia.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Tesouro Direto:<br /></dt></h5>
+                    <p><dd>O Tesouro Direto é um programa criado pelo Tesouro Nacional para garantir que pessoas físicas possam ter
+                        acesso aos títulos públicos. Ao comprar um título público, é como se o investidor emprestasse dinheiro ao
+                        Governo para financiar a dívida pública. Ou seja, a pessoa se torna credora e, depois de um prazo, recebe
+                        juros por isso. Existem diferentes títulos públicos, com diferentes prazos e rendimentos, que podem ser
+                        prefixados ou acompanhar indicadores importantes da economia, como a inflação (IPCA) e os juros (Selic).
+                    </dd></p>
+                </div>
+
+                 <!-- Link para o Tesouro Direto -->
+                 <div class="tesouro-link" style="margin-top: 30px;">
+                    <a href="https://www.tesourodireto.com.br/" class="btn btn-primary" target="_blank">Acesse o Tesouro Direto</a>
+                </div>
+                
+                <p></p>
+
+                <div class="news-item">
+                    <h5><dt>Letra de Crédito Imobiliário (LCI) / Letra de Crédito do Agronegócio (LCA):<br /></dt></h5>
+                    <p><dd>Esses tipos de investimentos caminham lado a lado porque funcionam de forma parecida. A LCI (Letra de
+                        Crédito Imobiliário) e a LCA (Letra de Crédito do Agronegócio) também são emitidas apenas por instituições
+                        financeiras, mas têm destinos específicos. Ao comprar esses títulos, o investidor também está emprestando
+                        dinheiro à instituição bancária, mas esses recursos só podem ser usados para financiar os setores
+                        imobiliários, no caso da LCI, e do agronegócio, no caso da LCA. </dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Certificado de Recebíveis Imobiliários (CRI) / Certificado de Recebíveis do Agronegócio (CRA):<br /></h5>   
+                    <p><dd>Os CRIs (Certificados de Recebíveis Imobiliários) e os CRAs (Certificados de Recebíveis do Agronegócio) são
+                        tipos de investimentos parecidos com as LCIs e LCAs. Ou seja, o dinheiro desses títulos só pode ser usado
+                        para financiar os setores imobiliário e do agronegócio. Mas quem emite os CRIs e CRAs não são instituições
+                        financeiras, e sim companhias securitizadoras. Além disso, diferentemente das letras de crédito, os
+                        certificados têm isenção de Imposto de Renda.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Debêntures:<br /></dt></h5>
+                    <p><dd>Debêntures são títulos de dívidas, de médio e longo prazos, emitidos por empresas para financiar projetos,
+                        aumentar capital, reestruturar dívidas, entre outras finalidades. Para elas, é mais vantajoso emitir esse
+                        título do que, por exemplo, contratar empréstimos com instituições financeiras – é uma captação mais rápida
+                        e, às vezes, mais barata. Existem as debêntures "normais", que podem ser emitidas por qualquer empresa, e as
+                        "incentivadas", que são emitidas por companhias que investem em obras públicas, como dos setores de
+                        eletricidade e rodovias, por exemplo. A diferença entre as duas é que as debêntures incentivadas têm isenção
+                        de Imposto de Renda.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Poupança:<br /></dt></h5>
+                    <p><dd>A poupança é um dos investimentos mais populares do país. Até dezembro de 2022, existiam mais de 240 milhões
+                        de contas com quase R$ 1 trilhão aplicados. Esse produto é isento de Imposto de Renda e não exige um valor
+                        mínimo para começar, mas seu rendimento é limitado e muda de acordo com a taxa básica de juros da economia,
+                        a Selic.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>LF:<br /></dt></h5>
+                    <p><dd>Letras Financeiras são emitidas por instituições financeiras que buscam recursos de longo prazo. Esse tipo
+                        de investimento é voltado para quem tem maior renda, pois o investimento mínimo é acima de R$ 50 mil e não é
+                        possível resgatar antes do prazo de vencimento, que é de, no mínimo, dois anos.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>LC:<br /></dt></h5>
+                    <p><dd>As LCs (Letras de Câmbio) são tipos de investimento da renda fixa emitidos por financeiras. Ao comprar esses
+                        títulos, o investidor empresta dinheiro a essas financeiras e elas só podem usar esses recursos para fazer
+                        empréstimos a outras pessoas e empresas. A remuneração desse tipo de investimento também pode ser prefixada
+                        ou pós-fixada. Diferentemente dos CDBs, LCAs e LCIs, o investimento inicial das Letras de Câmbio costumam
+                        ser mais altos (acima de R$ 1 mil, R$ 5 mil ou até mesmo R$ 10 mil), e o resgate só pode ser feito no prazo
+                        de vencimento, que costuma ser longo e pode variar de um a cinco anos, por exemplo.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5>Renda Variável</h5>
+                    <p><p>
+                        A Renda Variável, é um investimento em que os preços de aquisição variam e consequentemente os rendimentos
+                        também. Por outro lado, os lucros podem ser maiores e proporcionais aos riscos no curto prazo.
+                        <b><h5>Tipos de investimentos em renda Variável:</h5></b>
+                        <p></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Ações:<br /></dt></h5>
+                    <p><dd>Negociadas na bolsa de valores, as ações são a menor parcela do capital de uma empresa. Quem compra ações se
+                        torna sócio da companhia e, por isso, compartilha os lucros que ela obtém. São a maneira mais conhecida de
+                        investir em renda variável.
+                        Há duas formas de lucrar investindo em ações. A primeira é com a distribuição de dividendos, que são uma
+                        parte do lucro que as empresas distribuem aos acionistas. Pelo menos 25% dos ganhos devem ser destinados ao
+                        pagamento de proventos.
+                        A segunda forma se dá por meio da valorização dos papéis na bolsa de valores. Conforme os movimentos do
+                        mercado e os resultados da empresa, o preço de uma ação pode aumentar – ou diminuir também. Quem compra
+                        ações por um valor baixo e vende mais tarde, por um preço maior, consegue lucrar.</dd>
+                    <p></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Fundos Imobiliários (FIIs):<br /></dt></h5>
+                    <p><dd>Um fundo imobiliário reúne investidores interessados em aplicar em conjunto no mercado imobiliário. O mais
+                        comum é que o dinheiro seja usado na construção ou na aquisição de imóveis, depois locados ou arrendados. Os
+                        ganhos dessas operações são divididos entre os participantes, na proporção em que cada um aplicou. Os FIIs
+                        podem ter as cotas negociadas no pregão da B3.
+                        Algumas pessoas acreditam que os fundos imobiliários são investimentos de renda fixa, por conta da
+                        distribuição regular de rendimentos mensais que muitos deles oferecem – e que lembra o funcionamento de
+                        alguns títulos públicos. Mas os FIIs são aplicações de renda variável: suas cotas oscilam na Bolsa, de
+                        acordo com as condições do mercado ou a gestão da carteira. Assim, não é possível saber de antemão qual será
+                        o retorno. E também não há garantia de que os rendimentos serão mantidos ao longo do tempo.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>ETF's:<br /></dt></h5>
+                    <p><dd>Exchange Traded Funds é o nome completo dos ETFs, também conhecidos como “fundos de índices”. Eles são
+                        fundos que replicam a composição de índices financeiros – como o Ibovespa ou o IBrX – e têm as cotas
+                        negociadas no pregão da bolsa, como as ações. Seu objetivo é oferecer aos investidores uma alternativa para
+                        investir em carteiras praticamente idênticas às principais referências do mercado.
+                        Uma das suas principais vantagens é a praticidade. Isso porque um ETF permite ao investidor apostar em
+                        várias ações de uma vez sem precisa comprar papel a papel. A segunda é o custo. As taxas de administração
+                        dos fundos de índices costumam ser bem menores do que as cobradas nos fundos de ações em geral, mesmo no
+                        caso dos passivos. Nos ETFs negociados no pregão da B3, elas variam entre 0,05% e 0,69% ao ano.</dd>
+                    <p></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Opções:<br /></dt></h5>
+                    <p><dd>Uma opção representa o direito de comprar ou vender uma ação (ou um outro ativo) em uma data futura
+                        específica e por um preço preestabelecido. É como se fosse um contrato, classificado como “derivativo”, já
+                        que o preço da opção deriva do preço do ativo a que ela se refere. Trata-se de um mercado grande e muito
+                        dinâmico.
+                        Uma opção pode ser utilizada como hedge – ou seja, como uma proteção no mercado futuro para os investimentos
+                        realizados no mercado à vista. Imagine alguém que comprou as ações de uma empresa e tem receio de que as
+                        cotações recuem no futuro. É possível evitar perdas maiores adquirindo opções de venda da ação por um preço
+                        que evite o prejuízo.
+                        Há também quem negocie as opções por si, sem ter a função de proteger uma carteira. O objetivo é
+                        efetivamente ganhar arbitrando os preços das opções, que também sobem e descem ao longo do tempo.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Câmbio:<br /></dt></h5>
+                    <p><dd>O investimento em câmbio envolve aplicações baseadas em moedas. Esse tipo de produto costuma ser considerado
+                        uma opção para diversificar a carteira e, principalmente, para proteger o patrimônio das oscilações da
+                        economia brasileira.
+                        Há muitas formas de fazer isso. Existem, por exemplo, fundos cambiais, que mantêm pelo menos 80% do
+                        patrimônio investido em ativos relacionados a moedas. Seu principal fator de risco é a flutuação de preço de
+                        moedas estrangeiras ou a variação do cupom cambial (taxa de juros em dólares no Brasil).
+                        Também é possível investir em câmbio comprando contratos ou minicontratos futuros de dólar negociados no
+                        pregão da B3. Eles representam acordos de compra ou venda da moeda, a um preço fechado, em uma data futura.
+                        Há ainda os COEs (Certificados de Operações Estruturadas) baseados em moedas estrangeiras.</dd>
+                    <p></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Futuros:<br /></dt></h5>
+                    <p><dd>Esses contratos são negociados no pregão da B3. Assim como os futuros de dólar, que podem ser usados para
+                        investir em câmbio, eles são acordos de compra ou venda de ativos variados, a um preço fechado, em uma data
+                        futura. Na bolsa brasileira, existem futuros de milho, café, soja, boi gordo, Ibovespa e até S&P 500, um dos
+                        principais índices de ações do mercado americano.Os futuros são uma maneira bastante comum de investir em
+                        commodities. Justamente por isso, uma das suas características é o fato de os contratos serem todos
+                        padronizados, de modo que todos os investidores negociem os derivativos com as mesmas condições.
+                        Uma particularidade dos contratos futuros é a existência de ajustes diários. Significa que, diariamente, a
+                        bolsa apura os lucros e prejuízos de cada posição (comprada ou vendida) nos derivativos. Assim, o investidor
+                        que adquiriu um determinado futuro e teve perdas em um dia precisa realizar um depósito para compensar. O
+                        contrário também acontece.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Fundos de Investimentos:<br /></dt></h5>
+                    <p><dd>Vários tipos de fundos permitem investir em renda variável. Os de ações são os exemplos mais comuns.
+                        Trata-se de carteiras que, por definição, aplicam no mínimo dois terços do patrimônio em ações negociadas em
+                        mercados organizados, como bolsas de valores, ou em outros ativos relacionados a esse segmento (como recibos
+                        de subscrição, cotas de outros fundos de ações ou BDRs, que são recibos de ações estrangeiras negociados no
+                        Brasil).
+                        Os fundos de ações são considerados maneiras simples de investir em renda variável, porque quem se
+                        responsabiliza por decidir que papéis comprar ou vender é um gestor profissional. Isso, é claro, tem um
+                        custo. Há cobrança de taxa de administração – e, em alguns casos, taxa de performance também.
+                        Ainda é possível investir em renda variável por meio de fundos multimercados. Eles investem em segmentos
+                        variados – renda fixa, variável e moedas. Alguns deles podem adotar estratégias bastante sofisticadas.</dd></p>
+                </div>
+
+                <div class="news-item">
+                    <h5><dt>Criptomoedas:<br /></dt></h5>
+                    <p><dd>Categoria recente de ativo financeiro, as criptomoedas são moedas virtuais não produzidas ou controladas
+                                pelos bancos centrais. Elas são, verdadeiramente, códigos que podem ser convertidos em valores. Sua criação
+                                se dá por meio de uma rede descentralizada de pessoas que, em seus servidores, registram as transações
+                                realizadas com essas moedas. São protegidas por criptografia e pela tecnologia de blockchain.
+                                É possível investir em criptomoedas – entre as quais o bitcoin é a mais conhecida – por meio de corretoras
+                                especializadas. Também existem fundos de criptomoedas. No Brasil, a Comissão de Valores Mobiliários (CVM)
+                                permite que os fundos façam aplicações indiretas, por meio de cotas de outros fundos ou de derivativos no
+                                exterior (desde que sejam regulamentados em seu país).</dd></p>
+                </div>
+
+             
+                                
+            <script>
+                // Função de busca para filtrar notícias financeiras
+                function searchNews() {
+                    var input, filter, newsList, newsItems, title, i;
+                    input = document.getElementById('searchInput');
+                    filter = input.value.toLowerCase();
+                    newsList = document.getElementById("newsList");
+                    newsItems = newsList.getElementsByClassName('news-item');
+        
+                    // Loop através de todas as notícias e esconde as que não correspondem à pesquisa
+                    for (i = 0; i < newsItems.length; i++) {
+                        title = newsItems[i].getElementsByTagName("h5")[0];
+                        if (title) {
+                            if (title.textContent.toLowerCase().indexOf(filter) > -1) {
+                                newsItems[i].style.display = "";
+                            } else {
+                                newsItems[i].style.display = "none";
+                            }
+                        }
+                    }
+                }
+            </script>
+
+    </body>
+    </head>
+        <br>
+        <main>
+
+        </main>
+          <br><br><br>
+          <footer class="py-4 bg-light">
+            <div class="container text-center">
+              <h4 class="mb-3">Conquiste sua liberdade financeira!</h4>
+              <form id="contactFormFooter">
+                <div class="row g-2">
+                  <div class="col">
+                    <input
+                      class="form-control"
+                      id="emailAddressBelow"
+                      type="email"
+                      placeholder="Seu e-mail"
+                      required
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                  </div>
+                </div>
+              </form>
+              <p class="mt-3 mb-0">
+                © 2024 Meu DinDin - Todos os direitos reservados
+              </p>
+            </div>
+          </footer>
+          <script src="js/usuario.js"></script>
+</body>
