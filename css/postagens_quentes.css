@@ -1,0 +1,100 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 80%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "cabecalho cabecalho"
+    "opcao opcao"
+    "informacao postagens"
+    "rodape rodape";
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    grid-gap: 0;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "cabecalho"
+      "opcao"
+      "informacao"
+      "postagens"
+      "rodape";
+  }
+}
+
+header {
+  grid-area: cabecalho;
+  align-content: center;
+  display: inline-block;
+}
+
+.nav-item {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  position: relative;
+}
+.nav-item:hover,
+.nav-item.active {
+  color: rgb(255, 145, 0);
+}
+.nav-link:hover::before,
+.nav-link.active:hover::before {
+  border: 10px;
+  width: 100%;
+  visibility: visible;
+}
+
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: #ebb147;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+footer {
+  grid-area: rodape;
+}
+footer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+aside {
+  grid-area: informacao;
+  text-align: center;
+  align-content: center;
+}
+
+#imginfo {
+  margin-bottom: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.card {
+  margin: 5px auto;
+}
+
+#postagens_quentes {
+  grid-area: postagens;
+  padding: 5px;
+}
+header {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header h5 {
+  font-weight: bolder;
+  border: 20px;
+  color: orange;
+}
